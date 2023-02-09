@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <listeners>
+    <listener class-name="listner.TestListner"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name=" First test(failed)" verbose="3">
+    <classes>
+      <class name="com.mavenproject.JiraDemo">
+        <methods>
+          <include name="verifyHomePageLogo"/>
+          <include name="setUp"/>
+          <include name="verifyHomepageHeaderText"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mavenproject.JiraDemo -->
+    </classes>
+  </test> <!--  First test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

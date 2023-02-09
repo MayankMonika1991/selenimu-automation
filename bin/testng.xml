@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" parallel="methods" verbose="3">
+ <listeners>
+        <listener class-name="listner.TestListner" />
+    </listeners>
+     <test name=" First test" skipfailedinvocationcounts="false">
+         <classes>
+             <class name="com.mavenproject.JiraDemo">             
+             </class>
+         </classes>
+     </test>
+</suite><!-- Test -->
